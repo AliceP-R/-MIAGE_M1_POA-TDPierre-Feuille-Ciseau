@@ -15,7 +15,7 @@ public enum RPSEnum
 
     private final String nom;
 
-    RPSEnum(String nom)
+    private RPSEnum(String nom)
     {
         this.nom = nom;
     }
