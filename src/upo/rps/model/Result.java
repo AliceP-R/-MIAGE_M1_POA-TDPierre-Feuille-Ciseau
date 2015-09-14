@@ -1,4 +1,4 @@
-package RPC;
+package upo.rps.model;
 
 /**
  * Created by alpottie on 14/09/2015.

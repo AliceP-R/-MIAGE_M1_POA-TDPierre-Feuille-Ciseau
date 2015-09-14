@@ -1,4 +1,4 @@
-package upo.rps;
+package upo.tdd;
 
 public class Main {
 
