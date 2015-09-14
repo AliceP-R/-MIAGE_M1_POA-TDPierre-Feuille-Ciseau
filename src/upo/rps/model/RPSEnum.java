@@ -6,7 +6,7 @@ package upo.rps.model;
 public enum RPSEnum
 {
     ROCK("Rock"),
-    PAPERS("Paper"),
+    PAPER("Paper"),
     SCISSORS("Scissors");
 
     public String getNom() {
