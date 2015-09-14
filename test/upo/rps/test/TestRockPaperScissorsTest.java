@@ -1,9 +1,8 @@
 package upo.rps.test;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
+import upo.rps.model.RPSEnum;
+import upo.rps.model.Result;
 import upo.rps.model.RockPaperScissors;
 
 import static org.testng.Assert.*;
@@ -15,18 +14,24 @@ import static org.testng.Assert.*;
 public class TestRockPaperScissorsTest
 {
 
-    RockPaperScissors rps;
+    private RockPaperScissors rps;
 
     @BeforeClass
     public void setUp() throws Exception
     {
-
-
+        rps = new RockPaperScissors();
     }
 
     @AfterClass
     public void tearDown() throws Exception
     {
+        rps = null;
+    }
 
+    @Parameters({"paper","rock"})
+    @Test
+    public void testWinPlay(String p1, String p2) throws Exception
+    {
+        assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.WIN);
     }
 }
