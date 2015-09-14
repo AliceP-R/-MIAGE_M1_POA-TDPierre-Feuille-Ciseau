@@ -19,6 +19,4 @@ public enum RPSEnum
     {
         this.nom = nom;
     }
-
-
 }

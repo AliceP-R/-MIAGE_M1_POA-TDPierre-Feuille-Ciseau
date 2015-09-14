@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3473076-f7b9-48ca-81de-8e5885d97a1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RPC/RPSEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RPC/Result.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RPC/RockPaperScissors.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RPC/RPSEnum.java" afterPath="$PROJECT_DIR$/src/RPC/RPSEnum.java" />
     </list>
     <ignored path="TD-Pierre-Feuille-Ciseau.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,8 +95,8 @@
       <file leaf-file-name="RPSEnum.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RPC/RPSEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2474804">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.3807391">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#175#176#0" expanded="true" />
                 <element signature="e#201#202#0" expanded="true" />
@@ -505,18 +502,21 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e3473076-f7b9-48ca-81de-8e5885d97a1b" name="Default" comment="" />
       <created>1442222107255</created>
       <option name="number" value="Default" />
       <updated>1442222107255</updated>
-      <workItem from="1442222109358" duration="431000" />
+      <workItem from="1442222109358" duration="636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431000" />
+    <option name="totallyTimeSpent" value="636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -583,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RPC/RPSEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2474804">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.3807391">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#175#176#0" expanded="true" />
             <element signature="e#201#202#0" expanded="true" />
