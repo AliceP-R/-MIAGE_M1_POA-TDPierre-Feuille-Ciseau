@@ -28,22 +28,62 @@ public class TestRockPaperScissorsTest
         rps = null;
     }
 
-    @Parameters({"paper","rock"})
-    @Test
+    @DataProvider
+    public Object[][] winData()
+    {
+        return new Object[][]{
+                {"ROCK", "SCISSORS"},
+                {"SCISSORS", "PAPER"},
+                {"PAPER", "ROCK"}
+        };
+    }
+
+    // Sans dataProvider
+    //@Parameters({"paper","rock"})
+    //@Test
+    // Avec dataProvider
+    @Test (dataProvider = "winData")
     public void testWinPlay(String p1, String p2) throws Exception
     {
         assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.WIN);
     }
 
+
+    @DataProvider
+    public Object[][] tieData()
+    {
+        return new Object[][]{
+                {"ROCK", "ROCK"},
+                {"SCISSORS", "SCISSORS"},
+                {"PAPER", "PAPER"}
+        };
+    }
+
+    /*
     @Parameters({"paper","paper"})
     @Test
+    */
+    @Test (dataProvider = "tieData")
     public void testTiePlay(String p1, String p2) throws Exception
     {
         assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.TIE);
     }
 
+    @DataProvider
+    public Object[][] lostData()
+    {
+        return new Object[][]{
+                {"ROCK", "PAPER"},
+                {"SCISSORS", "ROCK"},
+                {"PAPER", "SCISSORS"}
+        };
+    }
+
+    /*
     @Parameters({"paper","scissors"})
     @Test
+    */
+    @Test (dataProvider = "lostData")
     public void testLostPlay(String p1, String p2) throws Exception
     {
         assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.LOST);
