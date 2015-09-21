@@ -6,6 +6,9 @@ import upo.rps.model.RPSEnum;
 import upo.rps.model.Result;
 import upo.rps.model.RockPaperScissors;
 
+import java.io.CharArrayWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 import static org.testng.Assert.*;
@@ -16,33 +19,43 @@ import static org.testng.Assert.*;
 public class TestPlayer
 {
     RockPaperScissors rps;
+    /* On est obligé de créer 6 joueurs car on dépile la liste de mouvement à chaque fois
+       ce qui signifie qu'on ne peut donc pas refaire des tests puisque la liste est vide
+     */
     Player p1;
     Player p2;
+    Player p3;
+    Player p4;
+    Player p5;
+    Player p6;
 
     @BeforeClass
     public void setUp() throws Exception
     {
         rps = new RockPaperScissors();
-        Stack<RPSEnum> mvtp1 = new Stack<>();
+        List<RPSEnum> mvtp1 = new ArrayList<>();
         for(int i=0; i<rps.nbre_mvt; i++) {
-            mvtp1.push(RPSEnum.PAPER);
+            mvtp1.add(RPSEnum.PAPER);
         }
 
-        Stack<RPSEnum> mvtp2 = new Stack<>();
+        List<RPSEnum> mvtp2 = new ArrayList<>();
         for(int i=0; i<rps.nbre_mvt; i++) {
-            mvtp2.push(RPSEnum.ROCK);
+            mvtp2.add(RPSEnum.ROCK);
         }
 
         p1 = new Player("Joueur 1", mvtp1);
         p2 = new Player("Joueur 2", mvtp2);
+        p3 = new Player("Joueur 1", mvtp1);
+        p4 = new Player("Joueur 2", mvtp2);
+        p5 = new Player("Joueur 1", mvtp1);
+        p6 = new Player("Joueur 2", mvtp2);
     }
 
     @AfterClass
     public void tearDown() throws Exception
     {
         rps = null;
-        p1 = null;
-        p2 = null;
+        p1 = p2 = p3 = p4 = p5 = p6 = null;
 
     }
 
@@ -56,12 +69,12 @@ public class TestPlayer
     @Test
     public void testTiePlay() throws Exception
     {
-        assertEquals(rps.play(p1, p2), Result.TIE);
+        assertEquals(rps.play(p3, p4), Result.TIE);
     }
 
     @Test
     public void testLostPlay() throws Exception
     {
-        assertEquals(rps.play(p1, p2), Result.LOST);
+        assertEquals(rps.play(p5, p6), Result.LOST);
     }
 }
