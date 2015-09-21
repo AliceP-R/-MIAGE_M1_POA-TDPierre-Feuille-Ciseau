@@ -1,0 +1,18 @@
+<?xml version ="1.0" encoding ="UTF−8"?>
+ <!DOCTYPE suite SYSTEM "Z:\2015-2016\POO\TD-Pierre-Feuille-Ciseau\TD-Pierre-Feuille-Ciseau\testng-1.0.dtd">
+
+ <suite name ="RPS" verbose ="1" >
+	<parameter name ="paper " value ="PAPER" />
+	<parameter name ="rock" value ="ROCK" />
+	<parameter name ="scissors" value ="SCISSORS" />
+
+	<test name =" testWinPlay " >
+		<classes >
+			<class name ="upo.rps.test.TestRockPaperScissorsTest" >
+				<methods>
+				<include name ="testWinPlay" ></include >
+				</methods>
+			</class>
+		</classes>
+	</test>
+ </suite>

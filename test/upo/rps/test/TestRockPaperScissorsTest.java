@@ -34,4 +34,18 @@ public class TestRockPaperScissorsTest
     {
         assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.WIN);
     }
+
+    @Parameters({"paper","paper"})
+    @Test
+    public void testTiePlay(String p1, String p2) throws Exception
+    {
+        assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.TIE);
+    }
+
+    @Parameters({"paper","scissors"})
+    @Test
+    public void testLostPlay(String p1, String p2) throws Exception
+    {
+        assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)), Result.LOST);
+    }
 }
