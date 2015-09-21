@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3473076-f7b9-48ca-81de-8e5885d97a1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/upo/rps/model/Player.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reports/Test Results - upo_rps_test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/upo/rps/model/Result.java" afterPath="$PROJECT_DIR$/src/upo/rps/model/Result.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reports/Test Results - TestRockPaperScissorsTest.html" afterPath="$PROJECT_DIR$/reports/Test Results - TestRockPaperScissorsTest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/upo/rps/test/TestPlayer.java" />
+      <change type="DELETED" beforePath="Z:\2015-2016\POO\TD-Pierre-Feuille-Ciseau\TD-Pierre-Feuille-Ciseau\out\test\TD-Pierre-Feuille-Ciseau\upo\rps\test\TestRockPaperScissorsTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TD-Pierre-Feuille-Ciseau/upo/rps/model/Player.class" afterPath="$PROJECT_DIR$/out/production/TD-Pierre-Feuille-Ciseau/upo/rps/model/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TD-Pierre-Feuille-Ciseau/upo/rps/model/RockPaperScissors.class" afterPath="$PROJECT_DIR$/out/production/TD-Pierre-Feuille-Ciseau/upo/rps/model/RockPaperScissors.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/upo/rps/model/Player.java" afterPath="$PROJECT_DIR$/src/upo/rps/model/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java" afterPath="$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TD-Pierre-Feuille-Ciseau.iws" />
@@ -131,9 +133,21 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/upo/rps/model/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14808363">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="0.762069">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +156,24 @@
         <entry file="file://$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="36" />
+              <folding>
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/upo/rps/test/TestPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+              <folding>
+                <element signature="e#581#590#0" expanded="true" />
+                <element signature="e#718#727#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +184,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="TestNG Test Class" />
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
@@ -175,11 +205,13 @@
         <option value="$PROJECT_DIR$/test/upo/rps/test/TestRockPaperScissors.java" />
         <option value="$PROJECT_DIR$/src/RPC/RockPaperScissors.java" />
         <option value="$PROJECT_DIR$/src/upo/rps/model/RPSEnum.java" />
-        <option value="$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/test/upo/rps/test/TestRockPaperScissorsTest.java" />
         <option value="$PROJECT_DIR$/src/upo/rps/model/Result.java" />
         <option value="$PROJECT_DIR$/src/upo/rps/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java" />
+        <option value="$PROJECT_DIR$/test/upo/rps/model/TestPlayer.java" />
+        <option value="$PROJECT_DIR$/test/upo/rps/test/TestPlayer.java" />
       </list>
     </option>
   </component>
@@ -330,6 +362,7 @@
       <recent name="Z:\2015-2016\POO\TD-Pierre-Feuille-Ciseau\TD-Pierre-Feuille-Ciseau" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="upo.rps.model.RockPaperScissors" />
       <recent name="" />
       <recent name="RPC.RockPaperScissors" />
     </key>
@@ -337,6 +370,7 @@
       <recent name="upo" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="upo.rps.model" />
       <recent name="upo.rps.test" />
     </key>
   </component>
@@ -723,12 +757,12 @@
       <workItem from="1442227952508" duration="144000" />
       <workItem from="1442235021997" duration="648000" />
       <workItem from="1442817293479" duration="1766000" />
-      <workItem from="1442819573002" duration="2750000" />
+      <workItem from="1442819573002" duration="4316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10777000" />
+    <option name="totallyTimeSpent" value="12343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -743,7 +777,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -821,7 +855,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -863,7 +900,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -905,7 +945,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,15 +990,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,16 +1010,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/upo/rps/test/TestRockPaperScissorsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,11 +1037,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/upo/rps/model/RockPaperScissors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/upo/rps/test/TestRockPaperScissorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/upo/rps/test/TestPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#581#590#0" expanded="true" />
+            <element signature="e#718#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/upo/rps/model/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14808363">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="0.762069">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
