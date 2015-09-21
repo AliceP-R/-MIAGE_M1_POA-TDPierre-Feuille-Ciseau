@@ -1,6 +1,6 @@
 package upo.rps.model;
 
-import java.util.List;
+
 import java.util.Stack;
 
 /**
@@ -15,12 +15,14 @@ public class Player {
     public Player(String n, Stack<RPSEnum> mvt) {
         this.nom = n;
         this.mouvements = mvt;
+        this.score = 0;
     }
 
     public Player(String n, int nbre_mvt)
     {
         this.nom = n;
-        this.mouvements = new Stack<RPSEnum>();
+        this.score = 0;
+        this.mouvements = new Stack<>();
 
         for(int i=0; i<nbre_mvt; i++)
         {
@@ -34,7 +36,7 @@ public class Player {
         }
     }
 
-    RPSEnum getNextMove()
+    public RPSEnum getNextMove()
     {
         return this.mouvements.pop();
     }

@@ -1,10 +1,9 @@
 package upo.rps.test;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import upo.rps.model.Player;
 import upo.rps.model.RPSEnum;
+import upo.rps.model.Result;
 import upo.rps.model.RockPaperScissors;
 
 import java.util.Stack;
@@ -20,25 +19,25 @@ public class TestPlayer
     Player p1;
     Player p2;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws Exception
     {
         rps = new RockPaperScissors();
-        Stack<RPSEnum> mvtp1 = new Stack<RPSEnum>();
-        for(int i=0; i<10; i++) {
+        Stack<RPSEnum> mvtp1 = new Stack<>();
+        for(int i=0; i<rps.nbre_mvt; i++) {
             mvtp1.push(RPSEnum.PAPER);
         }
 
-        Stack<RPSEnum> mvtp2 = new Stack<RPSEnum>();
-        for(int i=0; i<10; i++) {
+        Stack<RPSEnum> mvtp2 = new Stack<>();
+        for(int i=0; i<rps.nbre_mvt; i++) {
             mvtp2.push(RPSEnum.ROCK);
         }
 
         p1 = new Player("Joueur 1", mvtp1);
-        p1 = new Player("Joueur 2", mvtp2);
+        p2 = new Player("Joueur 2", mvtp2);
     }
 
-    @AfterMethod
+    @AfterClass
     public void tearDown() throws Exception
     {
         rps = null;
@@ -49,8 +48,20 @@ public class TestPlayer
 
 
     @Test
-    public void testPlay() throws Exception
+    public void testWinPlay() throws Exception
     {
+        assertEquals(rps.play(p1, p2), Result.WIN);
+    }
 
+    @Test
+    public void testTiePlay() throws Exception
+    {
+        assertEquals(rps.play(p1, p2), Result.TIE);
+    }
+
+    @Test
+    public void testLostPlay() throws Exception
+    {
+        assertEquals(rps.play(p1, p2), Result.LOST);
     }
 }
