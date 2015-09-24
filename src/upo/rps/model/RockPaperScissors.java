@@ -28,10 +28,6 @@ public final class RockPaperScissors {
 
         while(itp1.hasNext() && itp2.hasNext())
         {
-
-        //}
-        //for(int i=0; i<nbre_mvt; i++)
-        //{
             RPSEnum mvtp1 = p1.getNextMove();
             RPSEnum mvtp2 = p2.getNextMove();
 
