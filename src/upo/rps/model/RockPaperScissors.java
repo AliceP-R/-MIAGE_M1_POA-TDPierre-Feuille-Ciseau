@@ -1,5 +1,7 @@
 package upo.rps.model;
 
+import java.util.Iterator;
+
 /**
  * Created by alpottie on 14/09/2015.
  */
@@ -21,9 +23,22 @@ public final class RockPaperScissors {
     public Result play(Player p1, Player p2)
     {
         Result res;
-        for(int i=0; i<nbre_mvt; i++)
+        Iterator<RPSEnum> itp1 = p1.mouvements.iterator();
+        Iterator<RPSEnum> itp2 = p2.mouvements.iterator();
+
+        while(itp1.hasNext() && itp2.hasNext())
         {
-            res=play(p1.getNextMove(), p2.getNextMove());
+
+        //}
+        //for(int i=0; i<nbre_mvt; i++)
+        //{
+            RPSEnum mvtp1 = p1.getNextMove();
+            RPSEnum mvtp2 = p2.getNextMove();
+
+           System.out.println("mvtp1 = "+mvtp1.toString());
+           System.out.println("mvtp2 = "+mvtp2.toString());
+
+            res=play(mvtp1, mvtp2);
             if(res == Result.WIN)
                 p1.setScore(p1.getScore()+1);
             if(res == Result.TIE)
@@ -35,6 +50,9 @@ public final class RockPaperScissors {
             {
                 p2.setScore(p2.getScore()+1);
             }
+
+            itp1.next();
+            itp2.next();
         }
 
         if(p1.getScore() > p2.getScore())

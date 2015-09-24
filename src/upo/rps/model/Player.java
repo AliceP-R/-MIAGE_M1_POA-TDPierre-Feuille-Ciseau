@@ -45,7 +45,6 @@ public class Player {
         }
 
         it = this.mouvements.iterator();
-        System.out.println(mouvements.size());
     }
 
     public RPSEnum getNextMove()
@@ -54,16 +53,10 @@ public class Player {
             return it.next();
         else
             return null;
-
-        //return this.mouvements.remove(this.mouvements.size()-1);
     }
 
     public String getNom() {
         return this.nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     public int getScore() {
