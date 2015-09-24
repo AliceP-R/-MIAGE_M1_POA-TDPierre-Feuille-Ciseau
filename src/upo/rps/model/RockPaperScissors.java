@@ -4,7 +4,7 @@ package upo.rps.model;
  * Created by alpottie on 14/09/2015.
  */
 public final class RockPaperScissors {
-    public static final int nbre_mvt = 10;
+    public final int nbre_mvt = 10;
 
     public Result play(RPSEnum p1, RPSEnum p2)
     {

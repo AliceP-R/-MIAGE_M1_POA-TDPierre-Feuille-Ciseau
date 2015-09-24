@@ -17,13 +17,13 @@ public class TestRockPaperScissorsTest
     private RockPaperScissors rps;
 
     @BeforeClass
-    public void setUp() throws Exception
+    public void setUpClass() throws Exception
     {
         rps = new RockPaperScissors();
     }
 
     @AfterClass
-    public void tearDown() throws Exception
+    public void tearDownClass() throws Exception
     {
         rps = null;
     }

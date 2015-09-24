@@ -2,6 +2,7 @@ package upo.rps.model;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
@@ -13,12 +14,15 @@ public class Player {
     private int score;
     /*On utilise Stack car il y a les méthodes push() et pop() qui permettent de gérer la collection sans connaitre les index */
     public List<RPSEnum> mouvements;
+    private Iterator<RPSEnum> it;
+    int max = 3;
+    int min = 0;
 
     public Player(String n, List<RPSEnum> mvt) {
         this.nom = n;
         this.score = 0;
-        this.mouvements = new ArrayList<>();
         this.mouvements=mvt;
+        it = this.mouvements.iterator();
 
 
     }
@@ -31,7 +35,7 @@ public class Player {
 
         for(int i=0; i<nbre_mvt; i++)
         {
-            int num_rand = (int)Math.random()*2;
+            int num_rand = (int)(Math.random()*(max-min))+min;
             if(num_rand == 0)
                 mouvements.add(RPSEnum.ROCK);
             if(num_rand == 1)
@@ -39,11 +43,19 @@ public class Player {
             if(num_rand == 2)
                 mouvements.add(RPSEnum.SCISSORS);
         }
+
+        it = this.mouvements.iterator();
+        System.out.println(mouvements.size());
     }
 
     public RPSEnum getNextMove()
     {
-        return this.mouvements.remove(this.mouvements.size()-1);
+        if(it.hasNext())
+            return it.next();
+        else
+            return null;
+
+        //return this.mouvements.remove(this.mouvements.size()-1);
     }
 
     public String getNom() {
