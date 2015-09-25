@@ -31,9 +31,6 @@ public final class RockPaperScissors {
             RPSEnum mvtp1 = p1.getNextMove();
             RPSEnum mvtp2 = p2.getNextMove();
 
-           System.out.println("mvtp1 = "+mvtp1.toString());
-           System.out.println("mvtp2 = "+mvtp2.toString());
-
             res=play(mvtp1, mvtp2);
             if(res == Result.WIN)
                 p1.setScore(p1.getScore()+1);
